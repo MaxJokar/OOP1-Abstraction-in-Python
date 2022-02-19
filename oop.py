@@ -8,5 +8,14 @@ class Person:
         print(self.name)    
         print(self.age)
         
+    #independant Method(Static method)   
+    @staticmethod 
+    def sum(x,y):
+        return x+y 
+             
+        
+  
 person1=Person("Jack",48)
 person1.showPersonInfo()        
+
+
