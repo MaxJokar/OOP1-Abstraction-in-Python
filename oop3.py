@@ -7,22 +7,22 @@ class Person(ABC):
         self.name = name
         self.age = age
         
-    @abstractmethod
+    @abstractmethod  # This function (Method) must be used in Children,could be with differet codes
     def showInfo(self):
         pass
          
         
 class Student(Person):
-    def __init__(self,studentId,name,age):
+    def __init__(self,name,age,studentId,):
         super().__init__(name, age)
         self.studentId=studentId
         
     def showInfo(self):
-        print(f"{self.name}\t {self.age}\t{self.studentId}")  
+        print(f" Her Name Is :{self.name}\t {self.age}\t ID: {self.studentId}")  
         
         
 class Teacher(Person):
-    def __init__(self,teacherCode, name, age):
+    def __init__(self, name, age,teacherCode):
         super().__init__(name,age)
         self.teacherCode=teacherCode   
 
@@ -31,8 +31,8 @@ class Teacher(Person):
         print(f"Name : {self.name}\t Age: {self.age}\t Teacher Code :{self.teacherCode}")  
         
 
-student1=Student(100,"Rose",18)
-teacher1=Teacher(200,"Philip",19)
+student1=Student("Rose",18,100)
+teacher1=Teacher("Philip",19,250)
 
 student1.showInfo()
 teacher1.showInfo()
