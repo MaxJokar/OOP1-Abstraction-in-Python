@@ -20,7 +20,7 @@ class Person :
     @age.setter
     def age(self,age):
         self.__age=age    
-#==========================================        
+#===========OLD METHOD TO GET & SET  :===============================        
     #getter or setter  functions     
     # def getName(self):
     #     return self.__name    
@@ -33,15 +33,15 @@ class Person :
 person1=Person("Rose",72)
 person1.showPersonInfo()
 
-# print(person1.getName())
+# print(person1.getName()),==>print(person1.name)  
 # person1.setName("Philip")
 # person1.showPersonInfo()  
 #==============================================    
 # property is between fields and methods and functions
-print(person1.name)   
+# print(person1.name)   ==>works without this part too !
 person1.name="Philip" 
 person1.showPersonInfo()   
     
     
-person1.age=120
-print(person1.age)   
+# person1.age=120
+# print(person1.age)   
