@@ -18,7 +18,7 @@ class Student(Person):
         self.studentId=studentId
         
     def showInfo(self):
-        print(f" Her Name Is :{self.name}\t {self.age}\t ID: {self.studentId}")  
+        print(f" Student Name :{self.name}\t St.Age  : {self.age}\t ID: {self.studentId}")  
         
         
 class Teacher(Person):
@@ -28,7 +28,7 @@ class Teacher(Person):
 
     def showInfo(self):
           
-        print(f"Name : {self.name}\t Age: {self.age}\t Teacher Code :{self.teacherCode}")  
+        print(f"Teacher Name : {self.name}\t Tea.Age: {self.age}\t Student Code :{self.teacherCode}")  
         
 
 student1=Student("Rose",18,100)
