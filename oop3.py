@@ -6,7 +6,7 @@ class Person(ABC):
     def __init__(self, name, age,Nationality):
         self._name = name
         self._age = age
-        self.__nationality=Nationality #Can not be Accessed By Children if the field is  PRIVATE!
+        self.__nationality=Nationality #Can not be Accessed By Children if the field is  PRIVATE!PROTECTED IT WORKS
         
     @abstractmethod  # This function (Method) must be used in Children,could be with differet codes
     def showInfo(self):
@@ -19,7 +19,7 @@ class Student(Person):
         self.studentId=studentId
         
     def showInfo(self):
-       # print(f" Student Name :{self._name}\t St.Age  : {self._age}\t Nationality :{self.__nationality} ID: {self.studentId}")  
+    #    print(f" Student Name :{self._name}\t St.Age  : {self._age}\t Nationality :{self.__nationality} ID: {self.studentId}")  
        #Children can not access to the PRIVATE   fields!
        print(f" Student Name :{self._name}\t St.Age  : {self._age}\t  ID: {self.studentId}")  
         
