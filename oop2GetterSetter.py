@@ -39,9 +39,8 @@ person1.showPersonInfo()
 #==============================================    
 # property is between fields and methods and functions
 # print(person1.name)   ==>works without this part too !
-person1.name="Philip" 
+person1.name="Philip" #<==>person1.setName("Philip")
 person1.showPersonInfo()   
     
-    
-# person1.age=120
-# print(person1.age)   
+person1.age=120
+print(person1.age)   
