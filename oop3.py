@@ -6,7 +6,7 @@ class Person(ABC):
     def __init__(self, name, age,Nationality):
         self._name = name
         self._age = age
-        self.__nationality=Nationality
+        self.__nationality=Nationality #Can not be Accessed By Children if the field is  PRIVATE!
         
     @abstractmethod  # This function (Method) must be used in Children,could be with differet codes
     def showInfo(self):
